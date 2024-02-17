@@ -25,7 +25,7 @@
       }
     </style>
   </head>
-  <body class="font-raleway">
+  <body class="font-raleway container mx-auto">
     <header class="container mx-auto mt-12">
       <!-- nav section -->
       <div class="navbar bg-base-100">
@@ -82,9 +82,9 @@
       <!-- banner section -->
       <section class="text-center">
         <div
-          class="bg-[url(images/banner.png)] bg-no-repeat bg-cover rounded-[32px]"
+          class="bg-[url(images/banner.png)] bg-no-repeat w-full lg:bg-cover rounded-[32px]"
         >
-          <h1 class="text-6xl text-white font-extrabold text-center pt-16">
+          <h1 class="text-6xl text-white font-extrabold text-center pt-28">
             End-to-End Travel with
           </h1>
           <p class="text-6xl mt-8 font-extrabold text-center text-[#1DD100]">
@@ -104,8 +104,53 @@
         </div>
       </section>
     </header>
+    <!-- main -->
     <main>
-      <!-- main -->
+      <!-- best offer for passenger -->
+      <section class="mt-44">
+        <h1 class="text-4xl font-bold text-center">Best offers for you</h1>
+        <!-- card -->
+        <div class="flex justify-around mt-12">
+          <div class="flex bg-[#FFBF0F] gap-48 px-12 py-12 rounded-3xl">
+            <div>
+              <h1 class="text-5xl font-sans font-black">15% OFF</h1>
+              <p class="text-xl font-semibold text-[#030712CC]">
+                on your next purchase
+              </p>
+              <p class="text-lg font-medium text-[#03071280]">
+                use by January 2024
+              </p>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+              <h1 class="text-3xl font-black">NEW15</h1>
+              <p class="text-xl text-[#03071280] font-medium">Coupon Code</p>
+            </div>
+          </div>
+          <!-- card two -->
+          <div class="flex bg-[#F78C9C] gap-48 px-12 py-12 rounded-3xl">
+            <div>
+              <h1 class="text-5xl font-sans font-black">20% OFF</h1>
+              <p class="text-xl font-semibold text-[#030712CC]">
+                on your next purchase
+              </p>
+              <p class="text-lg font-medium text-[#03071280]">
+                use by January 2024
+              </p>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+              <h1 class="text-3xl font-black">Couple20</h1>
+              <p class="text-xl text-[#03071280] font-medium">Coupon Code</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center items-center mt-16">
+          <button
+            class="btn px-8 py-6 pb-10 border-[#1DD100] text-[#1DD100] text-lg font-bold"
+          >
+            See All Offers
+          </button>
+        </div>
+      </section>
     </main>
     <footer>
       <!-- footer -->
