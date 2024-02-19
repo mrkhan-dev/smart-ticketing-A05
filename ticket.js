@@ -1,21 +1,3 @@
-// document.getElementById("all-seat").addEventListener("click", function () {
-//   const userPressed = event.target.innerText;
-//   const allSeat = document.getElementById("current-seat");
-//   const countSelectedSeat = document.getElementById("selected-seat");
-//   const newSeat = allSeat.innerText;
-//   const seatCount = countSelectedSeat.innerText;
-//   const convertSeatToNumber = parseInt(newSeat);
-//   const seatCountToNumber = parseInt(seatCount);
-//   if (userPressed) {
-//     const remainingSeat = convertSeatToNumber - 1;
-//     const addSeat = seatCountToNumber + 1;
-//     setTextElementById("current-seat", remainingSeat);
-//     setTextElementById("selected-seat", addSeat);
-//     setBackgroundColor(userPressed);
-//     setBackgroundColor("selected-seat");
-//   }
-// });
-
 const busSeat = document.getElementsByClassName("kbd");
 for (const seat of busSeat) {
   seat.addEventListener("click", function (event) {
@@ -83,6 +65,7 @@ document.getElementById("next").addEventListener("click", function () {
   for (const num of numberField) {
     if (num.length >= 0) {
       blurElementById("ph-paribahan");
+      blurElementById("footer");
       hideElementById("seats");
       showElementById("modal");
     }
