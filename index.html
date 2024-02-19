@@ -195,7 +195,7 @@
           </div>
         </div>
       </section>
-      <!-- alert section -->
+      <!-- modal section -->
       <section id="modal" class="hidden mt-8 px-96">
         <div class="bg-gray-50 text-center px-12 py-14 rounded-2xl">
           <div class="flex items-center justify-center">
@@ -395,37 +395,37 @@
             </h1>
             <!-- card -->
             <div class="bg-[#F7F8F8] rounded-xl p-8 border-t-2 mt-8">
-              <div class="grid grid-cols-3 gap-48 border-b-2 border-solid pb-4">
-                <div class="">
-                  <p
-                    class="border-b-2 border-solid font-semibold text-[#030712 font-sans] flex gap-3"
-                  >
-                    Seat
-                    <span id="selected-seat" class="px-3 rounded-lg">0</span>
-                  </p>
-                  <p>c2</p>
-                </div>
-                <div>
-                  <p
-                    class="border-b-2 border-dashed font-semibold text-[#030712 font-sans]"
-                  >
-                    Class
-                  </p>
-                  <p>Economy</p>
-                </div>
-                <div>
-                  <p
-                    class="border-b-2- border-dashed font-semibold text-[#030712 font-sans]"
-                  >
-                    price
-                  </p>
-                  <p class="font-sans">550</p>
-                </div>
-              </div>
+              <ul class="flex gap-44 border-b-2 border-dashed">
+                <li class="flex gap-2">
+                  Seat <span id="selected-seat" class="px-3 rounded-lg">0</span>
+                </li>
+                <li>Class</li>
+                <li>Price</li>
+              </ul>
+              <div id="div" class="grid grid-cols-3 gap-x-56"></div>
               <!-- total price -->
-              <div class="flex justify-between mt-4">
+              <div class="flex justify-between mt-4 border-t-2 border-solid">
                 <h3>Total Price</h3>
-                <h3 class="font-sans">BTD 500</h3>
+                <p>BDT <span id="total-price">0</span></p>
+              </div>
+              <!-- coupon  -->
+              <div class="mt-9 relative">
+                <input
+                  class="px-6 py-5 w-full rounded-xl"
+                  type="text"
+                  name=""
+                  id="coupon-input"
+                  placeholder="Have any coupon?"
+                />
+                <button
+                  class="btn bg-[#1DD100] text-white absolute right-3 top-2 outline-0"
+                >
+                  Apply
+                </button>
+              </div>
+              <div class="flex justify-between mt-3">
+                <h3>Grand Total</h3>
+                <p>BDT <span id="grand-total">0</span></p>
               </div>
             </div>
             <!-- passenger info -->

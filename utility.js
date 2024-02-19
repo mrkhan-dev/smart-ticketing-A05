@@ -50,3 +50,9 @@ function removeClassById(elementId) {
   const element = document.getElementById(elementId);
   element.classList.remove("hidden");
 }
+
+function getInputElementById(elementId) {
+  const element = document.getElementById(elementId);
+  const value = element.value;
+  return value;
+}
