@@ -16,7 +16,7 @@
 //   }
 // });
 
-const busSeat = document.getElementsByClassName("button");
+const busSeat = document.getElementsByClassName("kbd");
 for (const seat of busSeat) {
   seat.addEventListener("click", function (event) {
     const userPressed = event.target.innerText;
@@ -79,7 +79,17 @@ document.getElementById("coupon-btn").addEventListener("click", function () {
 
 // modal
 document.getElementById("next").addEventListener("click", function () {
-  blurElementById("ph-paribahan");
-  hideElementById("seats");
-  showElementById("modal");
+  const numberField = getInputElementById("phone");
+  for (const num of numberField) {
+    if (num.length >= 0) {
+      blurElementById("ph-paribahan");
+      hideElementById("seats");
+      showElementById("modal");
+    }
+  }
+  // if (numberField.length >= 0) {
+  //   blurElementById("ph-paribahan");
+  //   hideElementById("seats");
+  //   showElementById("modal");
+  // }
 });
