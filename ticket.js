@@ -87,9 +87,9 @@ document.getElementById("next").addEventListener("click", function () {
       showElementById("modal");
     }
   }
-  // if (numberField.length >= 0) {
-  //   blurElementById("ph-paribahan");
-  //   hideElementById("seats");
-  //   showElementById("modal");
-  // }
+  document.getElementById("continue").addEventListener("click", function () {
+    console.log("clicked");
+    window.location.reload();
+    hideElementById("modal");
+  });
 });

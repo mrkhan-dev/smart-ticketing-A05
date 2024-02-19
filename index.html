@@ -164,7 +164,7 @@
           testing features allow for a streamlined .
         </p>
         <!-- paribahan details -->
-        <div class="bg-white flex">
+        <div class="bg-gray-50 flex">
           <div class="p-8">
             <!-- details -->
             <div class="flex gap-3">
@@ -186,21 +186,38 @@
                 </kbd>
               </div>
             </div>
-            <div class="parent flex justify-between bg-gray-100 rounded-xl">
-              <p>route</p>
-              <p>Dhaka-Sylhet</p>
+            <div class="bg-white px-8 rounded-2xl mt-6 py-10">
+              <div
+                class="parent flex justify-between border-b-2 border-dashed pb-5"
+              >
+                <p class="text-lg font-semibold text-[#03071299]">route</p>
+                <p class="text-lg font-semibold text-[#030712]">Dhaka-Sylhet</p>
+              </div>
+              <div
+                class="flex justify-between border-b-2 border-dashed pb-5 mt-3"
+              >
+                <p class="text-lg font-semibold text-[#03071299]">
+                  Departure Time
+                </p>
+                <p class="text-lg font-semibold text-[#030712]">9:00</p>
+              </div>
+              <div class="flex justify-between mt-6">
+                <button class="btn">Boarding Point - Laxmipur</button
+                ><button class="btn">Dropping Point - Bogura</button
+                ><button class="btn">Est. Time - 11 Hour</button>
+              </div>
             </div>
           </div>
-          <div class="flex flex-col pl-96">
+          <div class="flex flex-col pl-96 items-center justify-center">
             <!-- taka -->
             <img src="./images/fare.png" alt="" />
-            <h1>550 Taka</h1>
-            <p>Per Seat</p>
+            <h1 class="text-5xl text-[#030712] font-semibold">550 Taka</h1>
+            <p class="text-2xl text-[#03071299] font-semibold">Per Seat</p>
           </div>
         </div>
       </section>
       <!-- modal section -->
-      <section id="modal" class="hidden mt-8 px-96">
+      <section id="modal" class="mt-8 px-96 hidden">
         <div class="bg-gray-50 text-center px-12 py-14 rounded-2xl">
           <div class="flex items-center justify-center">
             <img class="text-center" src="./images/success.png" alt="" />
@@ -211,7 +228,7 @@
             We are working hard to find the best service and deals for you.
           </p>
           <p>Shortly you will find a confirmation in your email.</p>
-          <kbd class="btn w-80 bg-[#1DD100]">Continue</kbd>
+          <kbd id="continue" class="btn w-80 bg-[#1DD100]">Continue</kbd>
         </div>
       </section>
       <!-- select your seat -->
@@ -384,8 +401,8 @@
               select your seat
             </h1>
             <!-- card -->
-            <div class="bg-[#F7F8F8] rounded-xl p-8 border-t-2 mt-8">
-              <ul class="flex gap-44 border-b-2 border-dashed">
+            <div class="bg-[#F7F8F8] rounded-xl p-8 mt-8">
+              <ul class="flex gap-44 border-b-2 border-dashed py-3">
                 <li class="flex gap-2">
                   Seat <span id="selected-seat" class="px-3 rounded-lg">0</span>
                 </li>
@@ -452,6 +469,10 @@
               >
                 Next
               </kbd>
+              <div class="flex justify-between mt-4 px-8">
+                <p class="border-b-2 border-solid">Terms and Conditions</p>
+                <p class="border-b-2 border-solid">Cancellation Policy</p>
+              </div>
             </div>
           </div>
         </div>
