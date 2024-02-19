@@ -23,8 +23,6 @@ for (const seat of busSeat) {
     const currentSeat = getTextElementValueById("current-seat");
     const selectedSeat = getTextElementValueById("selected-seat");
     const totalBdt = getTextElementValueById("total-price");
-    // const couponDiscount = getTextElementValueById("grand-total");
-
     // create p tag
     const div = document.getElementById("div");
     const p1 = document.createElement("p");
@@ -63,6 +61,21 @@ for (const seat of busSeat) {
     }
   });
 }
+document.getElementById("coupon-btn").addEventListener("click", function () {
+  const discount = getTextElementValueById("grand-total");
+
+  const couponInput = getInputElementById("coupon-input");
+  console.log(couponInput);
+  if (couponInput === "NEW15" || couponInput === "COUPLE 20") {
+    const couponDiscount = (15 / 100) * discount;
+    setTextElementValueById("grand-total", discount - couponDiscount);
+    hideElementById("coupon-section");
+  }
+  if (couponInput === "COUPLE 20") {
+    const coupleDiscount = (20 / 100) * discount;
+    setTextElementValueById("grand-total", discount - coupleDiscount);
+  }
+});
 
 // modal
 document.getElementById("next").addEventListener("click", function () {
